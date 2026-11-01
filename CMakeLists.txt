@@ -31,6 +31,8 @@ target_sources(WoTRadioVoice PRIVATE
     Source/PluginEditor.cpp
 )
 
+juce_generate_juce_header(WoTRadioVoice)
+
 target_compile_features(WoTRadioVoice PRIVATE cxx_std_17)
 
 target_compile_definitions(WoTRadioVoice PUBLIC
