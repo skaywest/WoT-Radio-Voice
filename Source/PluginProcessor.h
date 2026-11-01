@@ -39,6 +39,8 @@ private:
     {
         float hpIn = 0.0f, hpOut = 0.0f, lpOut = 0.0f;
         float envelope = 0.0f;
+        float held = 0.0f;
+        int holdCounter = 0;
     };
     std::array<ChannelState, 2> state {};
     double sr = 44100.0;
